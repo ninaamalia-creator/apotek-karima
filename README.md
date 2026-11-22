@@ -1,7 +1,7 @@
 # Apotek Karima Kudus
 
 Website resmi Apotek Karima Kudus, Mejobo, Kabupaten Kudus.
-Domain: https://apotekkarimakudus.com
+Domain: https://apotek-karima.vercel.app
 
 ## Mengisi event
 Buka `index.html`, cari `const EVENTS = [` lalu tambahkan satu baris per event:
