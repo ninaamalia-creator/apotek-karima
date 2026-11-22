@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apotek Karima Kudus</title>
+<meta name="description" content="Apotek Karima Kudus di Mejobo, Kabupaten Kudus. Obat bebas, obat resep, multivitamin, obat herbal, alat kesehatan, baby care, susu dan pampers. WhatsApp 0851-7420-2264.">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:title" content="Apotek Karima Kudus">
+<meta property="og:description" content="Solusi kesehatan keluarga di Mejobo, Kudus.">
+<link rel="canonical" href="https://apotek-karima.vercel.app/">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Apotek Karima Kudus">
+<meta property="og:url" content="https://apotek-karima.vercel.app/">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://apotek-karima.vercel.app/toko.jpg">
+<meta name="application-name" content="Apotek Karima Kudus">
+<meta name="apple-mobile-web-app-title" content="Apotek Karima Kudus">
+<meta name="theme-color" content="#0b7a5c">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","@id":"https://apotek-karima.vercel.app/#website","name":"Apotek Karima Kudus","alternateName":["Apotek Karima","Apotek Karima Mejobo"],"url":"https://apotek-karima.vercel.app/"},
+ {"@type":"Pharmacy","@id":"https://apotek-karima.vercel.app/#apotek","name":"Apotek Karima Kudus","url":"https://apotek-karima.vercel.app/","logo":"https://apotek-karima.vercel.app/logo.png","image":"https://apotek-karima.vercel.app/toko.jpg","telephone":"+6285174202264",
+  "address":{"@type":"PostalAddress","addressLocality":"Mejobo","addressRegion":"Jawa Tengah","addressCountry":"ID","streetAddress":"5VCX+328 Mejobo, Kabupaten Kudus"},
+  "hasMap":"https://www.google.com/maps/search/?api=1&query=5VCX%2B328%20Mejobo%2C%20Kabupaten%20Kudus%2C%20Jawa%20Tengah",
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"21:00"}]}
+]}
+</script>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: strip event di atas → header → hero foto toko → event → produk → layanan → tentang → kontak */
+:root{
+  --bg:#f5faf8; --surface:#ffffff; --tint:#e6f3ee; --fg:#15302a; --muted:#56706a; --line:#d5e6df;
+  --brand:#0b7a5c; --brand-d:#075843; --brand-ink:#ffffff; --sun:#f2c230; --sun-ink:#3d2f00;
+  --shadow:0 10px 30px -14px rgba(11,80,60,.28);
+  --display:"Bricolage Grotesque","Plus Jakarta Sans",system-ui,sans-serif;
+  --body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --c1:#e8f5ee; --c2:#fff4d6; --c3:#e9f4dd; --c4:#e3eefb; --c5:#f2e8fb; --c6:#fde8ec; --c7:#e0f4f6;
+  --logo-a:#1f3fae; --logo-b:#8e1d8f;
+  --i1:#0b7a5c; --i2:#b07d00; --i3:#4f8a1c; --i4:#2c64b3; --i5:#7a46b0; --i6:#c2405c; --i7:#13808c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d1a17; --surface:#13241f; --tint:#183029; --fg:#e4f1ec; --muted:#9ab8ae; --line:#24413a;
+  --brand:#2bb489; --brand-d:#1f9a73; --brand-ink:#04140f; --sun:#f2c230; --sun-ink:#2a2000;
+  --shadow:0 10px 30px -14px rgba(0,0,0,.6);
+  --c1:#173a2e; --c2:#3a3016; --c3:#24361a; --c4:#182c45; --c5:#2c1f3d; --c6:#3d1d26; --c7:#123638;
+  --logo-a:#7f9bff; --logo-b:#e07fe0;
+  --i1:#5fd8ad; --i2:#f2c94c; --i3:#9bd067; --i4:#7fb0f0; --i5:#c39af0; --i6:#f08aa0; --i7:#62cfd9;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1a17; --surface:#13241f; --tint:#183029; --fg:#e4f1ec; --muted:#9ab8ae; --line:#24413a;
+  --brand:#2bb489; --brand-d:#1f9a73; --brand-ink:#04140f; --sun:#f2c230; --sun-ink:#2a2000;
+  --shadow:0 10px 30px -14px rgba(0,0,0,.6);
+  --c1:#173a2e; --c2:#3a3016; --c3:#24361a; --c4:#182c45; --c5:#2c1f3d; --c6:#3d1d26; --c7:#123638;
+  --logo-a:#7f9bff; --logo-b:#e07fe0;
+  --i1:#5fd8ad; --i2:#f2c94c; --i3:#9bd067; --i4:#7fb0f0; --i5:#c39af0; --i6:#f08aa0; --i7:#62cfd9;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--surface)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:6px}
+svg.i{width:1.25em;height:1.25em;flex:none}
+
+/* Strip event */
+.strip{background:var(--brand-d);color:#fff}
+.strip .wrap{display:flex;align-items:center;gap:12px;padding-block:9px;font-size:14px;flex-wrap:wrap}
+.strip .tag{background:var(--sun);color:var(--sun-ink);font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.strip .msg{flex:1;min-width:0}
+.strip .cd{font-variant-numeric:tabular-nums;font-weight:700;opacity:.95}
+.strip a{color:#fff;font-weight:700;text-underline-offset:3px}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .mark{width:48px;height:48px;flex:none;border-radius:12px;background:#fff;padding:2px;object-fit:contain}
+.logo b{display:block;font-family:var(--display);font-size:24px;line-height:1;letter-spacing:.06em;background:linear-gradient(90deg,var(--logo-a),var(--logo-b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{display:block;font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--fg)}
+nav{margin-left:auto;display:flex;gap:4px}
+nav a{text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;border-radius:8px;color:var(--fg)}
+nav a:hover{background:var(--tint);color:var(--brand)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;padding:12px 20px;border-radius:12px;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--brand);color:var(--brand-ink);box-shadow:var(--shadow)}
+.btn.ghost{border-color:var(--brand);color:var(--brand);background:var(--surface)}
+.menu{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;padding:8px;color:var(--fg)}
+@media (max-width:960px){
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);flex-direction:column;padding:8px max(16px,env(safe-area-inset-right,0px)) 16px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line)}
+  nav.open{display:flex}
+  .menu{display:block}
+  header .hd-wa{display:none}
+}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--tint),var(--bg))}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:56px 64px}
+.hero h1{font-size:clamp(40px,6vw,68px);color:var(--brand);font-weight:800;letter-spacing:-.02em}
+.hero .pre{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);font-weight:600;margin-bottom:6px}
+.hero .sub{font-size:20px;color:var(--muted);margin-top:10px;font-weight:500}
+.hero .lead{margin-top:18px;max-width:52ch}
+.checks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;font-weight:600;font-size:15px}
+.checks span{display:flex;align-items:center;gap:8px}
+.checks svg{color:var(--brand)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.photo{position:relative;min-width:0}
+.photo img{display:block;width:100%;aspect-ratio:1209/1024;object-fit:cover;border-radius:24px;box-shadow:0 24px 50px -24px rgba(7,60,45,.5);border:6px solid var(--surface)}
+.badge{position:absolute;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:10px 14px;display:flex;gap:10px;align-items:center;font-size:13px;font-weight:600;border:1px solid var(--line)}
+.badge svg{color:var(--brand);width:28px;height:28px}
+.badge b{display:block;font-size:15px}
+.badge.b1{left:-22px;bottom:34px}
+.badge.b2{right:-14px;top:24px}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px;padding-block:36px 48px}
+  .badge.b1{left:10px;bottom:-18px}.badge.b2{right:10px;top:-14px}
+}
+
+/* Section */
+section.sec{padding-block:72px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:32px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px);margin-top:6px}
+.sec-head p{color:var(--muted);max-width:52ch}
+
+/* Event */
+#event{background:var(--surface);border-block:1px solid var(--line)}
+.ev-filter{display:flex;gap:6px;background:var(--tint);padding:4px;border-radius:12px}
+.ev-filter button{border:0;background:none;font:600 14px var(--body);padding:8px 14px;border-radius:9px;color:var(--muted);cursor:pointer}
+.ev-filter button[aria-pressed="true"]{background:var(--surface);color:var(--brand);box-shadow:0 2px 8px -4px rgba(0,0,0,.25)}
+.ev-feature{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--brand);color:#fff;border-radius:22px;padding:28px 32px;margin-bottom:22px;position:relative;overflow:hidden}
+.ev-feature::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08)}
+.ev-feature .lbl{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sun)}
+.ev-feature h3{font-size:clamp(22px,2.6vw,30px);margin:6px 0}
+.ev-feature p{opacity:.9;max-width:56ch}
+.timer{display:flex;gap:8px;position:relative;z-index:1}
+.timer div{background:rgba(255,255,255,.14);border-radius:12px;padding:10px 12px;text-align:center;min-width:62px}
+.timer b{display:block;font-family:var(--display);font-size:28px;font-variant-numeric:tabular-nums;line-height:1}
+.timer small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.datebig{background:#fff;color:#075843;border-radius:16px;padding:12px 18px;text-align:center;line-height:1.1}
+.datebig b{display:block;font-family:var(--display);font-size:40px}
+.datebig span{font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+@media (max-width:860px){.ev-feature{grid-template-columns:auto 1fr;padding:24px}.timer{grid-column:1/-1}}
+.ev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.ev{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.ev .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ev .date{font-weight:800;color:var(--brand);font-size:14px}
+.pill{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:var(--tint);color:var(--brand)}
+.pill.promo{background:var(--c2);color:var(--i2)}
+.pill.edu{background:var(--c4);color:var(--i4)}
+.pill.done{background:var(--line);color:var(--muted)}
+.ev h3{font-size:19px}
+.ev p{color:var(--muted);font-size:14px}
+.ev .meta{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);margin-top:auto;padding-top:6px;border-top:1px dashed var(--line)}
+.ev.past{opacity:.6}
+.ev-empty{grid-column:1/-1;display:flex;gap:16px;align-items:center;border:2px dashed var(--line);border-radius:18px;padding:28px;color:var(--muted)}
+.ev-empty svg{width:40px;height:40px;color:var(--brand)}
+.ev-empty b{color:var(--fg);font-size:17px}
+
+/* Produk */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.prod{--c:var(--c1);--i:var(--i1);background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.prod:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.prod::before{content:"";position:absolute;inset:0 0 auto;height:96px;background:var(--c)}
+.prod .ic{position:relative;width:64px;height:64px;border-radius:18px;background:var(--surface);display:grid;place-items:center;color:var(--i);box-shadow:0 6px 16px -10px rgba(0,0,0,.4);margin-top:10px}
+.prod .ic svg{width:34px;height:34px}
+.prod .n{position:absolute;top:18px;right:20px;font-family:var(--display);font-weight:800;font-size:13px;color:var(--i);background:var(--surface);border-radius:999px;padding:3px 10px}
+.prod h3{font-size:21px;margin-top:6px}
+.prod p{font-size:14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.chips span{font-size:12px;font-weight:600;background:var(--c);color:var(--fg);padding:4px 10px;border-radius:999px}
+.prod .ask{font-size:14px;font-weight:700;color:var(--i);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.prod.wide{grid-column:span 2;flex-direction:row;align-items:center;gap:22px}
+.prod.wide::before{inset:0 auto 0 0;width:120px;height:auto}
+.prod.wide .body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.prod.wide .ic{margin-top:0;flex:none;width:76px;height:76px;margin-left:10px}
+.p1{--c:var(--c1);--i:var(--i1)}.p2{--c:var(--c2);--i:var(--i2)}.p3{--c:var(--c3);--i:var(--i3)}.p4{--c:var(--c4);--i:var(--i4)}.p5{--c:var(--c5);--i:var(--i5)}.p6{--c:var(--c6);--i:var(--i6)}.p7{--c:var(--c7);--i:var(--i7)}
+.rx{font-size:12px;color:var(--muted);background:var(--bg);border-radius:10px;padding:8px 10px;display:flex;gap:6px}
+@media (max-width:1020px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.prod-grid{grid-template-columns:1fr}.prod.wide{grid-column:auto;flex-direction:column;align-items:flex-start}.prod.wide::before{inset:0 0 auto;width:auto;height:96px}.prod.wide .ic{margin:10px 0 0}}
+
+/* Layanan */
+#layanan{background:var(--tint)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:var(--surface);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.svc .ic{width:48px;height:48px;border-radius:14px;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;flex:none}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:18px;margin-bottom:4px}
+.svc p{font-size:14px;color:var(--muted)}
+.svc.hl{background:var(--brand);color:#fff}
+.svc.hl .ic{background:var(--sun);color:var(--sun-ink)}
+.svc.hl p{color:#fff;opacity:.88}
+@media (max-width:1020px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* Tentang + Galeri */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about p{color:var(--muted);margin-top:14px;max-width:58ch}
+.stats{display:flex;gap:28px;margin-top:24px;flex-wrap:wrap}
+.stats b{display:block;font-family:var(--display);font-size:30px;color:var(--brand)}
+.stats span{font-size:13px;color:var(--muted)}
+.gal{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:4/3;max-width:100%}
+.gal div{border-radius:16px;background-image:var(--img);background-size:cover;min-height:0}
+.gal .g1{grid-row:span 2;background-position:62% 50%;background-size:auto 100%}
+.gal .g2{background-position:72% 64%;background-size:260%}
+.gal .g3{background-position:10% 62%;background-size:260%}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+/* Kontak */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px}
+.row{display:flex;gap:14px;align-items:flex-start;padding-block:14px;border-bottom:1px solid var(--line)}
+.row:last-of-type{border-bottom:0}
+.row .ic{width:42px;height:42px;border-radius:12px;background:var(--tint);color:var(--brand);display:grid;place-items:center;flex:none}
+.row small{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.row b{font-size:17px}
+.copy{margin-left:auto;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:600 12px var(--body);padding:6px 10px;border-radius:8px;cursor:pointer;align-self:center}
+.map{position:relative;border-radius:22px;overflow:hidden;min-height:340px;background:
+  linear-gradient(90deg,transparent 48%,var(--line) 48% 52%,transparent 52%) 0 0/120px 120px,
+  linear-gradient(0deg,transparent 48%,var(--line) 48% 52%,transparent 52%) 0 0/120px 120px,
+  var(--tint);display:flex;align-items:flex-end;border:1px solid var(--line)}
+.map .road{position:absolute;left:-10%;right:-10%;top:42%;height:22px;background:var(--surface);transform:rotate(-8deg);border-block:2px solid var(--line)}
+.map .pin{position:absolute;left:50%;top:38%;transform:translate(-50%,-100%);color:var(--brand);filter:drop-shadow(0 6px 8px rgba(0,0,0,.25))}
+.map .pin svg{width:56px;height:56px}
+.map .pin::after{content:"";position:absolute;left:50%;bottom:-6px;width:18px;height:6px;border-radius:50%;background:rgba(0,0,0,.2);transform:translateX(-50%)}
+.map .info{position:relative;margin:16px;background:var(--surface);border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;width:100%;box-shadow:var(--shadow)}
+.map .info div{flex:1;min-width:180px}
+.map code{font-family:ui-monospace,Menlo,monospace;font-weight:700;color:var(--brand)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+
+footer{background:var(--brand-d);color:#e6f6ef;border-radius:28px 28px 0 0}
+footer .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-block:32px}
+footer .f{display:flex;gap:14px;align-items:flex-start;font-size:14px}
+footer .f svg{width:32px;height:32px;flex:none;color:#fff}
+footer .f b{display:block;color:#fff;font-size:15px}
+footer .copyline{text-align:center;font-size:12px;opacity:.75;padding-bottom:20px}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:99}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:90px}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="pinf" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5A8 8 0 0 0 4 9.5C4 15.6 12 22.5 12 22.5s8-6.9 8-13a8 8 0 0 0-8-8Z"/><circle cx="12" cy="9.5" r="3.2" fill="#fff"/></symbol>
+  <symbol id="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="m7.5 12.3 3 3 6-6.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></g></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <!-- produk -->
+  <symbol id="capsule" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="2.5" y="8" width="19" height="8" rx="4" transform="rotate(-40 12 12)"/><path d="m9.4 9 5.2 6"/></g><path fill="currentColor" opacity=".3" d="M6.2 16.9a4 4 0 0 1-.3-5.6l3.5-2.4 5.2 6-3.3 2.6a4 4 0 0 1-5.1-.6Z"/></symbol>
+  <symbol id="vit" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="12" height="14" rx="3"/><path d="M8 7V4.5h8V7"/><path d="m10 12 2 4 2-4"/></g></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C4 11 9 5 20 4c0 10-5 16-13 15Z"/><path d="M5 19c3-5 6-8 10-10"/></g></symbol>
+  <symbol id="steth" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3H5v6a5 5 0 0 0 10 0V3h-1"/><path d="M10 14v2a5 5 0 0 0 10 0v-3"/><circle cx="20" cy="11" r="2"/></g></symbol>
+  <symbol id="rx" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M9 9h2.5a2 2 0 0 1 0 4H9V9m0 4v4m2.5-4 3.5 4m0-3-3 3"/></g></symbol>
+  <symbol id="baby" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 10h.01M15 10h.01M9.5 14.5a3.5 3.5 0 0 0 5 0M12 3.5c-1 1.6 0 3 1.5 2.5"/></g></symbol>
+  <symbol id="milk" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5h6M10 2.5v3L7 9v12.5h10V9l-3-3.5v-3"/><path d="M7 13h10"/></g></symbol>
+  <!-- layanan -->
+  <symbol id="chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></g></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-4.7-8-10.3A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 8 2.7C20 15.3 12 20 12 20Z"/><path d="M6 12h3l1.5-2.5 2 4 1.5-1.5h4"/></g></symbol>
+  <symbol id="drop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></g></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M12 7v6m-3-3h6"/></g></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="M12 9v6m-3-3h6"/></g></symbol>
+  <symbol id="family" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="2.5"/><circle cx="16" cy="6" r="2.5"/><circle cx="12" cy="13" r="2"/><path d="M4 20v-5a4 4 0 0 1 4-4M20 20v-5a4 4 0 0 0-4-4M9 21v-2a3 3 0 0 1 6 0v2"/></g></symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#beranda" aria-label="Apotek Karima Kudus, beranda">
+      <img class="mark" src="logo.png" alt="" width="48" height="48">
+      <span><small>APOTEK KARIMA</small><b>KUDUS</b></span>
+    </a>
+    <nav id="nav" aria-label="Menu utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#event">Event</a>
+      <a href="#produk">Produk</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <a class="btn pri hd-wa" href="https://wa.me/6285174202264" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg>Chat WhatsApp</a>
+    <button class="menu" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<section class="hero" id="beranda">
+  <div class="wrap">
+    <div>
+      <p class="pre">Selamat Datang di</p>
+      <h1>Apotek Karima Kudus</h1>
+      <p class="sub">Solusi Kesehatan Keluarga Anda di Mejobo</p>
+      <p class="lead">Menyediakan obat berkualitas, produk kesehatan lengkap, dan pelayanan yang ramah untuk Anda dan keluarga.</p>
+      <div class="checks">
+        <span><svg class="i"><use href="#chk"/></svg>Obat Asli</span>
+        <span><svg class="i"><use href="#chk"/></svg>Harga Terjangkau</span>
+        <span><svg class="i"><use href="#chk"/></svg>Pelayanan Terpercaya</span>
+      </div>
+      <div class="ctas">
+        <a class="btn pri" href="https://wa.me/6285174202264?text=Halo%20Apotek%20Karima%2C%20saya%20mau%20tanya%20ketersediaan%20obat" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg>Tanya Obat via WhatsApp</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=5VCX%2B328%20Mejobo%2C%20Kabupaten%20Kudus%2C%20Jawa%20Tengah" target="_blank" rel="noopener"><svg class="i"><use href="#pin"/></svg>Lihat Lokasi</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="toko.jpg" alt="Tampak depan Apotek Karima dengan papan nama dan area parkir motor" width="1100" height="932">
+      <div class="badge b2"><svg><use href="#family"/></svg><span><b>Kesehatan Keluarga</b>Obat · Vitamin · Bayi</span></div>
+      <div class="badge b1"><svg><use href="#clock"/></svg><span><b>Buka Setiap Hari</b>07.00 – 21.00 WIB</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="event">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Event &amp; Promo</span><h2>Kegiatan di Apotek Karima</h2></div>
+      <div class="ev-filter" role="group" aria-label="Saring event">
+        <button type="button" id="fUp" aria-pressed="true">Akan datang</button>
+        <button type="button" id="fAll" aria-pressed="false">Semua</button>
+      </div>
+    </div>
+    <div class="ev-feature" id="evFeature"></div>
+    <div class="ev-grid" id="evGrid"></div>
+  </div>
+</section>
+
+<section class="sec" id="produk">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Produk</span><h2>Kategori Produk Kami</h2></div>
+      <p>Tujuh kategori untuk kebutuhan kesehatan sehari-hari. Tanyakan stok dan harga langsung lewat WhatsApp.</p>
+    </div>
+    <div class="prod-grid">
+      <article class="prod p1">
+        <span class="n">Bebas</span>
+        <div class="ic"><svg><use href="#capsule"/></svg></div>
+        <h3>Obat Bebas</h3>
+        <p>Obat logo hijau dan biru untuk keluhan ringan sehari-hari.</p>
+        <div class="chips"><span>Demam</span><span>Batuk &amp; pilek</span><span>Maag</span><span>Pusing</span></div>
+      </article>
+      <article class="prod p2">
+        <span class="n">Imun</span>
+        <div class="ic"><svg><use href="#vit"/></svg></div>
+        <h3>Multivitamin</h3>
+        <p>Vitamin dan suplemen untuk menjaga daya tahan tubuh.</p>
+        <div class="chips"><span>Vitamin C</span><span>Vitamin D</span><span>Zinc</span><span>Anak</span></div>
+      </article>
+      <article class="prod p3">
+        <span class="n">Alami</span>
+        <div class="ic"><svg><use href="#leaf"/></svg></div>
+        <h3>Obat Herbal</h3>
+        <p>Jamu dan fitofarmaka terdaftar BPOM untuk perawatan alami.</p>
+        <div class="chips"><span>Masuk angin</span><span>Pegal linu</span><span>Madu</span></div>
+      </article>
+      <article class="prod p4">
+        <span class="n">Alkes</span>
+        <div class="ic"><svg><use href="#steth"/></svg></div>
+        <h3>Alat Kesehatan</h3>
+        <p>Peralatan pemeriksaan dan perawatan di rumah.</p>
+        <div class="chips"><span>Tensimeter</span><span>Termometer</span><span>Masker</span><span>P3K</span></div>
+      </article>
+      <article class="prod p5 wide">
+        <div class="ic"><svg><use href="#rx"/></svg></div>
+        <div class="body">
+          <h3>Obat Resep</h3>
+          <p>Obat keras sesuai resep dokter, disiapkan dan dijelaskan langsung oleh apoteker. Kirim foto resep lewat WhatsApp untuk cek ketersediaan sebelum datang.</p>
+          <div class="rx"><svg class="i"><use href="#shield"/></svg>Wajib membawa resep asli saat pengambilan.</div>
+        </div>
+      </article>
+      <article class="prod p6">
+        <span class="n">0–5 th</span>
+        <div class="ic"><svg><use href="#baby"/></svg></div>
+        <h3>Baby Care</h3>
+        <p>Perawatan lembut untuk kulit dan kesehatan si kecil.</p>
+        <div class="chips"><span>Minyak telon</span><span>Bedak</span><span>Sabun bayi</span></div>
+      </article>
+      <article class="prod p7">
+        <span class="n">Gizi</span>
+        <div class="ic"><svg><use href="#milk"/></svg></div>
+        <h3>Susu &amp; Pampers</h3>
+        <p>Susu formula, susu dewasa, dan popok berbagai ukuran.</p>
+        <div class="chips"><span>Susu bayi</span><span>Susu lansia</span><span>Popok S–XXL</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="layanan">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Layanan</span><h2>Layanan di Apotek</h2></div>
+      <p>Semua layanan tersedia langsung di apotek, dibantu tenaga kefarmasian kami.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc hl"><div class="ic"><svg><use href="#chat"/></svg></div><div><h3>Konsultasi Apoteker</h3><p>Tanya cara pakai, dosis, dan efek samping obat langsung ke apoteker.</p></div></div>
+      <div class="svc"><div class="ic"><svg><use href="#rx"/></svg></div><div><h3>Tebus Resep</h3><p>Penebusan resep dokter dengan penjelasan aturan minum.</p></div></div>
+      <div class="svc"><div class="ic"><svg><use href="#wa"/></svg></div><div><h3>Info Stok via WhatsApp</h3><p>Cek ketersediaan obat sebelum datang ke apotek.</p></div></div>
+      <div class="svc"><div class="ic"><svg><use href="#book"/></svg></div><div><h3>Edukasi Kesehatan</h3><p>Penyuluhan rutin untuk ibu, balita, dan lansia.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tentang">
+  <div class="wrap about">
+    <div>
+      <span class="eyebrow">Tentang Kami</span>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);margin-top:6px">Apotek keluarga di Mejobo</h2>
+      <p>Apotek Karima melayani warga Mejobo dan sekitarnya dengan obat-obatan asli, produk kesehatan lengkap, dan pelayanan yang ramah. Kami percaya setiap keluarga berhak mendapat informasi obat yang jelas dari tenaga kefarmasian.</p>
+      <p>Area parkir luas tersedia di depan apotek, sehingga Anda bisa mampir dengan nyaman.</p>
+      <div class="stats">
+        <div><b>7</b><span>Kategori produk</span></div>
+        <div><b>7 hari</b><span>Buka setiap minggu</span></div>
+      </div>
+    </div>
+    <div class="gal" id="galeri" aria-label="Galeri foto Apotek Karima">
+      <div class="g1" role="img" aria-label="Tampak depan apotek"></div>
+      <div class="g2" role="img" aria-label="Pintu masuk dan etalase"></div>
+      <div class="g3" role="img" aria-label="Area parkir motor"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kontak" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Kontak</span><h2>Kunjungi Kami</h2></div></div>
+    <div class="contact">
+      <div class="card">
+        <div class="row"><div class="ic"><svg class="i"><use href="#wa"/></svg></div><div><small>WhatsApp / Telepon</small><b id="phone">0851-7420-2264</b></div><button class="copy" type="button" data-copy="085174202264">Salin</button></div>
+        <div class="row"><div class="ic"><svg class="i"><use href="#pin"/></svg></div><div><small>Alamat</small><b>Mejobo, Kabupaten Kudus</b><br><span style="color:var(--muted);font-size:14px">Jawa Tengah</span></div></div>
+        <div class="row"><div class="ic"><svg class="i"><use href="#clock"/></svg></div><div><small>Jam Operasional</small><b>Senin – Minggu</b><br><span style="color:var(--muted);font-size:14px">07.00 – 21.00 WIB</span></div></div>
+        <a class="btn pri" style="margin-top:14px" href="https://wa.me/6285174202264" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg>Chat WhatsApp</a>
+      </div>
+      <div class="map">
+        <div class="road"></div>
+        <div class="pin"><svg><use href="#pinf"/></svg></div>
+        <div class="info">
+          <div><small style="font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.08em;text-transform:uppercase">Plus Code Google Maps</small><br><code>5VCX+328</code> Mejobo, Kudus, Jawa Tengah</div>
+          <a class="btn pri" href="https://www.google.com/maps/search/?api=1&query=5VCX%2B328%20Mejobo%2C%20Kabupaten%20Kudus%2C%20Jawa%20Tengah" target="_blank" rel="noopener">Buka di Maps<svg class="i"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f"><svg><use href="#clock"/></svg><div><b>Jam Operasional</b>Senin – Minggu<br>07.00 – 21.00 WIB</div></div>
+    <div class="f"><svg><use href="#pin"/></svg><div><b>Alamat</b>5VCX+328 Mejobo,<br>Kabupaten Kudus, Jawa Tengah</div></div>
+    <div class="f"><svg><use href="#wa"/></svg><div><b>WhatsApp</b><span style="font-size:18px;font-weight:700">0851-7420-2264</span></div></div>
+  </div>
+  <p class="copyline">© 2026 Apotek Karima Kudus · Mejobo, Kabupaten Kudus </p>
+</footer>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+// Ubah daftar event di sini. Format tanggal: YYYY-MM-DDTHH:MM (WIB)
+const EVENTS = [
+  // Contoh: {title:"Judul event", type:"Promo", start:"2026-11-07T08:00", end:"2026-11-07T11:00", time:"08.00 – 11.00 WIB", desc:"Keterangan singkat."},
+];
+const BLN=["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"];
+const HARI=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
+const d = s => new Date(s+":00+07:00");
+const now = () => new Date();
+const pillCls = t => t==="Promo"?"promo":t==="Edukasi"?"edu":"";
+const esc = s => s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let showAll=false;
+
+function local(s){return new Date(d(s).getTime()+7*3600e3)}
+function fmtDate(s){const L=local(s);return `${HARI[L.getUTCDay()]}, ${L.getUTCDate()} ${BLN[L.getUTCMonth()]} ${L.getUTCFullYear()}`}
+
+function render(){
+  const t=now();
+  const sorted=[...EVENTS].sort((a,b)=>d(a.start)-d(b.start));
+  const upcoming=sorted.filter(e=>d(e.end)>=t);
+  const next=upcoming[0];
+  const feat=document.getElementById("evFeature");
+  if(next){
+    const L=local(next.start);
+    feat.hidden=false;
+    feat.innerHTML=`<div class="datebig"><span>${BLN[L.getUTCMonth()]}</span><b>${L.getUTCDate()}</b><span>${HARI[L.getUTCDay()].slice(0,3)}</span></div>
+      <div style="position:relative;z-index:1;min-width:0"><span class="lbl">${d(next.start)<=t?"Sedang berlangsung":"Event terdekat"} · ${esc(next.type)}</span><h3>${esc(next.title)}</h3><p>${esc(next.desc)} <b>${esc(next.time)}</b></p></div>
+      <div class="timer" id="timer" aria-live="off"></div>`;
+  } else feat.hidden=true;
+  const list=(showAll?sorted:upcoming).filter(e=>e!==next||showAll);
+  document.getElementById("evGrid").innerHTML=list.map(e=>{
+    const past=d(e.end)<t;
+    return `<article class="ev ${past?"past":""}"><div class="top"><span class="date">${fmtDate(e.start)}</span><span class="pill ${past?"done":pillCls(e.type)}">${past?"Selesai":esc(e.type)}</span></div>
+    <h3>${esc(e.title)}</h3><p>${esc(e.desc)}</p>
+    <div class="meta"><svg class="i"><use href="#clock"/></svg>${esc(e.time)} · Apotek Karima</div></article>`}).join("")
+    || (next?"":`<div class="ev-empty"><svg class="i"><use href="#cal"/></svg><div><b>Belum ada event terjadwal</b><p>Event dan promo terbaru Apotek Karima akan tampil di sini.</p></div></div>`);
+  window._next=next; tick();
+}
+function tick(){
+  const n=window._next;
+  if(!n)return;
+  const t=now(), st=d(n.start);
+  const tm=document.getElementById("timer");
+  if(st<=t){if(tm)tm.innerHTML=`<div><b>Hari ini</b><small>berlangsung</small></div>`;return}
+  let ms=st-t; const D=Math.floor(ms/864e5); ms-=D*864e5; const H=Math.floor(ms/36e5); ms-=H*36e5; const M=Math.floor(ms/6e4); const S=Math.floor((ms-M*6e4)/1e3);
+  const p=v=>String(v).padStart(2,"0");
+  if(tm)tm.innerHTML=`<div><b>${D}</b><small>Hari</small></div><div><b>${p(H)}</b><small>Jam</small></div><div><b>${p(M)}</b><small>Menit</small></div><div><b>${p(S)}</b><small>Detik</small></div>`;
+}
+const fUp=document.getElementById("fUp"),fAll=document.getElementById("fAll");
+fUp.onclick=()=>{showAll=false;fUp.setAttribute("aria-pressed","true");fAll.setAttribute("aria-pressed","false");render()};
+fAll.onclick=()=>{showAll=true;fAll.setAttribute("aria-pressed","true");fUp.setAttribute("aria-pressed","false");render()};
+render(); setInterval(tick,1000);
+
+// Galeri memakai foto yang sama
+const img=document.querySelector(".photo img").src;
+document.getElementById("galeri").style.setProperty("--img",`url("${img}")`);
+
+// Menu mobile
+const mb=document.getElementById("menuBtn"),nav=document.getElementById("nav");
+mb.onclick=()=>{const o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nav.querySelectorAll("a").forEach(a=>a.onclick=()=>{nav.classList.remove("open");mb.setAttribute("aria-expanded","false")});
+
+// Salin nomor
+const toast=document.getElementById("toast");
+function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(say.t);say.t=setTimeout(()=>toast.hidden=true,2200)}
+document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{
+  const v=b.dataset.copy;
+  (navigator.clipboard?navigator.clipboard.writeText(v):Promise.reject()).then(()=>say("Nomor disalin")).catch(()=>{
+    const r=document.createRange();r.selectNodeContents(document.getElementById("phone"));const s=getSelection();s.removeAllRanges();s.addRange(r);say("Nomor dipilih, tekan salin")});
+});
+</script>
+</body>
+</html>
