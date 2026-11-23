@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apotek-karima.vercel.app/sitemap.xml
